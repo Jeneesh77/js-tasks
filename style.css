@@ -1,0 +1,93 @@
+/* .head{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(255, 18, 18);
+    display: flex;
+/* } */
+.h1{
+    /* margin-left: 50px; */
+    text-align: center;
+    
+} */
+.h1 span{
+    color: rgb(0, 0, 0);
+}
+
+.h2{
+    margin-left: 670px;
+}
+
+
+
+
+.main{
+        width: 100%;
+    display: flex;
+   padding: 20px;
+}
+
+#sub1{
+   
+    background-color: #ffffff;
+    box-shadow: 80px 20px 10px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 500px;
+    margin-left: 200px;
+    margin-top: 10px;
+    padding: 20px;
+    
+}
+
+#sub2{
+    background-color: #ffffff;
+    box-shadow: 80px 10px 10px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 30px;
+    
+}
+.space{
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+.space1{
+    padding: 10px;
+    margin-left: -10px;
+    margin-top: 20px;
+    
+}
+
+.space11:hover{
+    transition: all 0.9s;
+    transform: scale(1.2);
+}
+
+#bmi{
+    border-color: transparen;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    
+}
+#spn3{
+    text-align: center;
+    margin-top: 100px;
+    font-size:xx-large;
+}
+
+#spn4{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.intro{
+    margin: 100px;
+}
+
+.intro h3{
+    color: rgb(0, 0, 0);
+}

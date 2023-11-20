@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+<!-- css js link -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+
+<body style="background-color: rgb(214, 207, 207);">
+
+    <header >
+        <div class="head">
+            <div class="h2">
+            <img src="https://bmi.chsc.dk/gfx/meter-400x360.png" height="100px">
+        </div>
+
+        <div class="h1">
+            <h1 style="color: rgb(6, 142, 8);">BMI CALCULATOR</h1>
+            <h3> <span> B</span>ody <span>M</span>ass  <span>I</span>ndex</h3>
+        </div>
+        </div>
+    </header>
+
+
+
+<div class="main">    <!-- main div -->
+
+    <div class="col-6" id="sub1">
+        <h1 class="text-center text-success">BMI CALCULATOR</h1>
+        <hr class="text-danger">
+
+        <div class="space">   <!-- GENDER  -->
+            <label >Gender</label>
+            <select class="form-control"  >
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+
+
+          <div class="space" >
+            <label >Age</label> <!-- AGE -->
+            <input type="number" class="form-control" id="ag" placeholder="From 2-120">
+            <span id="spn"></span>
+          </div>
+
+      <div class="space">
+        <div >  <!-- HEIGHT -->
+          <label >Height (cm)</label> 
+          <input type="number" class="form-control" placeholder="Enter Height" id="hei">
+          <span id="spn1"></span>
+        </div>
+
+
+        <div  class="space1"> <!-- WEIGHT -->
+          <label>Weight (kg)</label>
+          <input type="number" class="form-control" placeholder="Enter Weight" id="wei">
+          <span id="spn2"></span>
+        </div>
+ 
+
+        <div class="text-center ">
+          <button type="button" class="btn btn-success p-2 m-2 space11" onclick="buttonClick()" >Calculate</button>
+          <button type="button" class="btn btn-danger p-2 m-2 space11" onclick="buttonClick1()">Reset</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6" id="sub2">
+        <h1 class="text-center text-success">RESULT</h1>
+        <hr class="text-danger">
+
+
+        <div>
+        
+            <div id="spn3"></div>
+            <div id="spn4"></div>
+        </div>
+    </div>
+
+</div>
+
+<section >
+    <div class="intro">
+        <h3>Introduction to the body mass index (BMI)</h3>
+        <p>Body Mass Index (BMI) is widely used as an indicator of body fat content. Your weight alone is not sufficient to establish if you are in a healthy weight range. For example, a tall but slender person can weigh more than a short but plump individual. But the former may enjoy better health as long as their weight is suitable for their height. The ideal weight is also likely to differ for men and women of similar heights.</p>
+
+        <p> How then do you know whether you fall in the healthy weight range or not? Your BMI solves this confusion. It correlates your weight with your height and evaluates whether your weight is appropriate for your stature. You can use a BMI calculator to find out your BMI.</p>
+            
+        <p> Although not an exact measurement of body fat percentage, in most cases, BMI is a reliable tool for establishing risk levels for illnesses, especially ailments related to excess body fat. Many healthcare professionals use BMI to determine effective doses for medicines. Often people with a higher BMI need higher doses. Hence, it is crucial to be aware of your BMI to ensure your overall wellness.</p>
+    </div>
+
+    <div class="intro">
+        <h3>How to calculate BMI</h3>
+        <p>If you want to calculate your BMI, you have to find out your weight and height first. Once you know these values, you can arrive at the result by following the two steps mentioned below:</p>
+        <p>1. Multiply your height by itself (height X height).</p>
+        <p>2.  Divide your weight by the answer you get in the first step.</p>
+    </div>
+
+    <div class="intro">
+        <h3>BMI Measures And Status</h3>
+        <p>For adults over the age of 20 years, BMI values are grouped into the following weight status categories:</p>
+        <br><br>
+        <table style="width: 400px; height: 200px;">
+            <tr>
+                <th style="color: green;">BMI</th>
+                <th style="color: rgb(209, 209, 2);">Weight Status</th>
+            </tr>
+
+            <tr>
+                <td> Below 18.5 </td>
+                <td>  Underweight</td>
+            </tr>
+
+            <tr>
+                <td> 18.5–24.9</td>
+                <td> Normal weight</td>
+            </tr>
+            <tr>
+                <td> 25–29.9</td>
+                <td>  Overweight</td>
+            </tr>
+            <tr>
+                <td> 30–35</td>
+                <td>  Obese</td>
+            </tr>
+            <tr>
+                <td> Over 35</td>
+                <td> Morbid obesity</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+
+
+
+    
+</body>
+</html>
